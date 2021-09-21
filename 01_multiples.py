@@ -16,7 +16,7 @@ for num in range(1,limit):
     if num%3==0 or num%5==0:
         multiples.append(num)
 
-for mult in multiples:
-    print(multiples)
+#for mult in multiples:
+#    print(mult)
 
 print(sum(multiples))
