@@ -21,6 +21,7 @@ for n1 in range(1,1000):
     for n2 in range(1,1000):
         prod = n1*n2
         if is_palyndrome(str(prod)) and prod > maxpal:
+            maxpal = prod
             res = str(prod)
             fact1 = min(n1,n2)
             fact2 = max(n1,n2)
