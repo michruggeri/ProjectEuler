@@ -15,12 +15,13 @@ def is_palyndrome(strin):
 
 stop = False
 res = ""
-for n1 in range(999,0,-1):
-    for n2 in range(999,0,-1):
-        if is_palyndrome(str(n1*n2)):
-            res = str(n1*n2)
-            stop = True
-            break
-    if stop:
-        break
-print(res)
+maxpal = -1
+fact1,fact2 = -1,-1
+for n1 in range(1,1000):
+    for n2 in range(1,1000):
+        prod = n1*n2
+        if is_palyndrome(str(prod)) and prod > maxpal:
+            res = str(prod)
+            fact1 = min(n1,n2)
+            fact2 = max(n1,n2)
+print(f"{res} = {fact1} x {fact2}")
