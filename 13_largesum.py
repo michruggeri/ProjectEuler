@@ -6,6 +6,10 @@ Project Euler, problem 13
 Work out the first ten digits of the sum of the one-hundred 50-digit numbers below.
 """
 
+# I guess I could just use sum(numbers) --> str --> [:10]?
+# For fun/generality I'm doing something else, which should work for 
+# larger numbers that may give issues with overflow.
+
 numbers = """ 
 37107287533902102798797998220837590246510135740250
 46376937677490009712648124896970078050417018260538
