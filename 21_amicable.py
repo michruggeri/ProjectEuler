@@ -27,8 +27,6 @@ def find_friend(num):
 
 total = 0
 nmax = 10000 
-amicables = set()
-sums = []
 for a in range(nmax):
     friend = find_friend(a)
     if friend > 0:
